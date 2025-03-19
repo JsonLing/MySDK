@@ -15,6 +15,9 @@ let package = Package(
             name: "MySDK",
             targets: ["MySDK"]),
     ],
+dependencies: [
+    .package(url: "https://github.com/JsonLing/MySDK.git", from: "0.0.1")
+]
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
@@ -24,5 +27,6 @@ let package = Package(
             name: "MySDKTests",
             dependencies: ["MySDK"]
         ),
-    ]
+    ],
+    version: "0.0.2"
 )
