@@ -4,4 +4,11 @@ public class MySDK {
     public static func greet() {
         print("Hello from MySDK!")
     }
+
+      public static func performAction() -> String {
+        // 核心功能实现
+        return "Action performed"
+    }
+
+    
 }
